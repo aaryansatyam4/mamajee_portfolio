@@ -1,0 +1,122 @@
+/* About Me Section */
+.aboutme-section {
+    background-color: #192A3B; /* Dark background */
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutme-title {
+    font-size: 48px;
+    color: #ffffff; /* White color */
+    margin-bottom: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.aboutme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Section - Image */
+.aboutme-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-100px); /* Slide from left */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.aboutme-left.in-view {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Slide to position */
+}
+
+.aboutme-img {
+    width: 700px;
+   margin-left: -90px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+/* Right Section - Text */
+.aboutme-right {
+    flex: 2;
+    color: #ffffff; /* White color */
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 20px;
+    text-align: left;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Slide from bottom */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.aboutme-right.in-view {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide to position */
+}
+
+.aboutme-right p {
+    margin: 0;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .aboutme-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutme-left, .aboutme-right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .aboutme-right {
+        text-align: center;
+    }
+
+    .aboutme-img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutme-img {
+        max-width: 250px;
+    }
+
+    .aboutme-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutme-img {
+        max-width: 200px;
+    }
+
+    .aboutme-right p {
+        font-size: 16px;
+    }
+
+    .aboutme-title {
+        font-size: 28px;
+    }
+}

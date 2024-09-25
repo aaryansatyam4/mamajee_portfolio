@@ -1,0 +1,87 @@
+/* Contact Form Section */
+.contact-section {
+    background-color: #224464; /* Main background color */
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff; /* White text */
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2F5782; /* Form background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #ffffff; /* White label color */
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff; /* Input background color */
+    font-size: 16px;
+    color: #224464; /* Main Color for text */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #5767aa; /* Secondary color for placeholder */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border: 2px solid #4d8ac2; /* Focus color */
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4d8ac2; /* Secondary color for button */
+    color: #ffffff; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2F5782; /* Darker hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 28px;
+    }
+  
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  

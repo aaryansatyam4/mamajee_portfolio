@@ -1,0 +1,57 @@
+/* Certifications Section */
+.certifications-section {
+    background-color: #192A3B; /* Main Color for background */
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff; /* Text Color */
+  }
+  
+  .certifications-title {
+    font-size: 36px;
+    color: #ffffff; /* White Text for Title */
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .certification-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2F5782; /* Slightly lighter Main Color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .certification-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certification-icon {
+    font-size: 2rem;
+    color: #4d8ac2; /* Secondary Color */
+    margin-right: 20px;
+  }
+  
+  .certification-title {
+    font-size: 18px;
+    color: #ffffff; /* Text Color */
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .certifications-title {
+      font-size: 28px;
+    }
+  }
+  

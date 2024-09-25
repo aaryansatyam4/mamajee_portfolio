@@ -1,0 +1,203 @@
+/* Color scheme from the uploaded image */
+:root {
+    --mainColor: #224464;
+    --mainColorLight: #2F5782;
+    --accent-color: #d5c4db; /* Pale purple */
+    --background-color: #4677A5; /* Very light purple */
+    --text-color: #000241; /* White for text */
+    --contrast-text-color: #000241; /* Dark contrast for better readability */
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 100vh;
+    min-height: 500px;
+    color: var(--contrast-text-color);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .hero .max-width {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .left-section {
+    text-align: left;
+    width: 50%;
+    animation: fadeInLeft 1.5s ease-in-out;
+    z-index: 2;
+  }
+  
+  .right-section {
+    width: 50%;
+    text-align: center;
+    animation: fadeInRight 1.5s ease-in-out;
+    z-index: 1;
+  }
+  
+  .left-section .text-1 {
+    font-size: 28px;
+    color: var(--contrast-text-color);
+  }
+  
+  .left-section .text-2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--contrast-text-color);
+  }
+  
+  .left-section .text-3 {
+    font-size: 42px;
+    margin: 5px 0;
+    color: var(--contrast-text-color);
+  }
+  
+  .left-section .text-3 span {
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .left-section a {
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+  }
+  
+  .left-section a:hover {
+    color: var(--main-color);
+    background: none;
+  }
+  
+  .person-image {
+    width: 800px;
+    height: auto;
+   
+    animation: zoomIn 2s ease-in-out;
+  }
+  
+  @media (max-width: 1200px) {
+    .person-image {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .left-section, .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .left-section {
+      margin-bottom: 30px;
+    }
+  
+    .person-image {
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .person-image {
+      width: 250px;
+    }
+  
+    .left-section .text-2 {
+      font-size: 60px;
+    }
+  
+    .left-section .text-3 {
+      font-size: 32px;
+    }
+  }
+  
+  /* Responsive changes for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column; /* Stack image and content vertically */
+      align-items: center; /* Center align both image and text */
+    }
+  
+    .right-section {
+      order: 1; /* Image comes first */
+      margin-bottom: 20px;
+    }
+  
+    .left-section {
+      order: 2; /* Text comes after image */
+      text-align: center; /* Center-align text in responsive mode */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .person-image {
+      width: 200px;
+    }
+  
+    .left-section .text-2 {
+      font-size: 40px;
+    }
+  
+    .left-section .text-3 {
+      font-size: 24px;
+    }
+  
+    .left-section a {
+      font-size: 20px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
