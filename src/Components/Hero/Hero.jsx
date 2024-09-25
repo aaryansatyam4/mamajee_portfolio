@@ -27,9 +27,7 @@ const Hero = () => {
             <div className="text-3">
               And I'm a <span className="typing"></span>
             </div>
-            {/* Email us button with mailto link */}
-            <a href="mailto:sn.ashish@gmail.com" className="email-button">Email me</a>
-
+            <a href="mailto:sn.ashish@gmail.com" className="email-button">Email Me</a>
           </div>
           <div className="right-section">
             <img src={personImage} alt="Ashish Sinha" className="person-image" />

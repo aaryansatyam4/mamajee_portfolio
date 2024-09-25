@@ -1,13 +1,37 @@
 /* Color scheme from the uploaded image */
 :root {
-    --mainColor: #224464;
+    --mainColor: #ffffff;
     --mainColorLight: #2F5782;
     --accent-color: #d5c4db; /* Pale purple */
     --background-color: #4677A5; /* Very light purple */
     --text-color: #000241; /* White for text */
     --contrast-text-color: #000241; /* Dark contrast for better readability */
   }
-  
+  .email-button {
+    display: inline-block;
+    background-color: #d5c4db; /* Pale purple background */
+    color: #000241; /* Dark text color for contrast */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.email-button:hover {
+    background-color: var(--mainColor); /* Change to your primary color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.email-button:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
 
   
   .hero {
