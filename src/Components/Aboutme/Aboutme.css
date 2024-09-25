@@ -46,7 +46,7 @@
 
 .aboutme-img {
     width: 700px;
-   margin-left: -90px;
+    margin-left: -90px;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     object-fit: cover;
@@ -92,24 +92,33 @@
         text-align: center;
     }
 
+    .aboutme-left {
+        justify-content: center; /* This will center the image in the flex container */
+    }
+
     .aboutme-img {
-        max-width: 300px;
+        max-width: 400px; /* Adjusted for larger size on tablets */
+        margin-left: 0; /* Ensure image is not shifted on smaller screens */
     }
 }
 
 @media (max-width: 768px) {
     .aboutme-img {
-        max-width: 250px;
+        max-width: 300px;
     }
 
     .aboutme-title {
         font-size: 36px;
     }
+
+    .aboutme-left {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
     .aboutme-img {
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .aboutme-right p {
@@ -118,5 +127,9 @@
 
     .aboutme-title {
         font-size: 28px;
+    }
+
+    .aboutme-left {
+        justify-content: center;
     }
 }
