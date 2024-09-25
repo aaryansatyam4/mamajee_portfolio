@@ -56,8 +56,8 @@
 .aboutme-right {
     flex: 2;
     color: #ffffff; /* White color */
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 20px;
     text-align: left;
     opacity: 0; /* Initially hidden */

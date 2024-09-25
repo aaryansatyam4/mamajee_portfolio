@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="footer-description">Feel free to follow me on social media for more updates.</p>
 
         <div className="footer-social-links">
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
+          <a href="https://www.linkedin.com/in/ashish-sinha-b681791a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FaLinkedin />
           </a>
           <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="footer-link">

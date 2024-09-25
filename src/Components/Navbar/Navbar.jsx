@@ -34,9 +34,7 @@ function Navbar() {
         <div className="nav-item">
           <a href="#crtfct" onClick={closeNavbar}>Certifications</a>
         </div>
-        <div className="nav-item">
-          <a href="#" onClick={closeNavbar}>Contact me</a>
-        </div>
+      
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

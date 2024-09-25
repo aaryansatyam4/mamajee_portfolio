@@ -41,7 +41,11 @@ const Aboutme = () => {
         </div>
         <div className="aboutme-right" ref={contentRef}>
           <p>
-            I am Ashish Sinha, a Vi National Award Winner in 2024, with a deep passion for driving impactful HR initiatives. With over two decades of experience, I specialize in Learning & Development, Organizational Development, and HR Business Partnership. Throughout my career, I've led transformational projects like Project Atmanirbhar and have been instrumental in shaping talent strategies, building organizational culture, and improving employee engagement. My expertise spans across workforce management, vendor partnerships, and the development of tailored training programs that drive real business outcomes. I'm also a strong advocate for people-centric leadership, and I thrive on creating meaningful learning experiences that help both individuals and organizations grow.
+          Embracing Growth: The Journey of a Lifelong Learner
+
+In today's fast-paced world, staying within one's comfort zone is no longer an option for those who strive to achieve excellence. I pride myself on being a proactive and ambitious Professional who continuously seeks new challenges and opportunities to grow. Whether it's taking on a complex project, learning a new skill, or stepping into an unfamiliar role, I thrive on the excitement of pushing boundaries and expanding my horizons.
+My journey has been marked by a series of diverse assignments that have enriched my expertise and broadened my perspective. From spearheading innovative initiatives to collaborating with cross-functional teams, each experience has taught me invaluable lessons and reinforced my commitment to lifelong learning.
+By embracing change and taking calculated risks, I have developed a robust skill set that allows me to adapt quickly and drive success in any ecology . I believe that true growth happens when we step outside our comfort zones and challenge ourselves to reach new heights.
           </p>
         </div>
       </div>

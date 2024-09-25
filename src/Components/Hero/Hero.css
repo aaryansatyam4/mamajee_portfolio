@@ -8,6 +8,8 @@
     --contrast-text-color: #000241; /* Dark contrast for better readability */
   }
   
+
+  
   .hero {
     display: flex;
     align-items: center;

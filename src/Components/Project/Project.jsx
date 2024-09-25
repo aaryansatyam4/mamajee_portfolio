@@ -3,24 +3,24 @@ import "./Project.css";
 
 const projects = [
   {
-    title: "Organizational Values | 2023",
+    title: " Insourcing Project |   Feb 2024 - May 2024",
     description:
-      "Created the Learning module on Organizational Value. Covered 100% of the organization in 4 months. Received individual and team awards.",
+      "Post-merger, we successfully insourced 3,000 associates within 60 days, building the entire process from scratch, including selection guidelines and CTC benchmarking, and completed the project on time.",
   },
   {
-    title: "Project GenPert | 2022",
+    title: "Organizational Values | Oct 2023 - Jan 2024",
     description:
-      "A comprehensive project for the HR function, received a national level individual award for creating a learning journey using the T-shaped model.",
+      "Designed the Learning module on Organizational Value for the organization . As a part of the team created the content, Faculty guides & did the train the trainers workshop for the Master Trainers identified in the organization .",
   },
   {
-    title: "Project Atmanirbhar | 2024",
+    title: "Project GenPert ",
     description:
-      "Insourced approximately 3500 associates in 60 days. Built the process from scratch, received a national team award for this project.",
+      "Project GenPert was designed to create a comprehensive learning journey for the HR function, based on the T-shaped model. It included ILT, peer learning, and curated, customized online courses across various verticals.",
   },
   {
-    title: "Retail CRE Attrition | 2022",
+    title: "Retail CRE attrition",
     description:
-      "Analyzed high attrition rates in the retail segment and implemented recommendations to improve retention. Part of a cross-functional team.",
+      "The Retail segment has one of the highest early attrition in the country . I was a part of the CFT which did a root cause analysis on the reasons of attritions , suggested means & oversaw the recommendations getting implemented",
   },
 ];
 
