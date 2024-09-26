@@ -16,12 +16,6 @@ const Footer = () => {
           <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FaInstagram />
           </a>
-          <a href="https://www.twitter.com/your-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <FaTwitter />
-          </a>
-          <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <FaFacebook />
-          </a>
         </div>
 
         <div className="footer-copyright">
