@@ -13,9 +13,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/ashish-sinha-b681791a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FaLinkedin />
           </a>
-          <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <FaInstagram />
-          </a>
+        
         </div>
 
         <div className="footer-copyright">
