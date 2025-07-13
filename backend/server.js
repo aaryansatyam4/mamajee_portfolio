@@ -52,11 +52,13 @@ mongoose.connect(process.env.MONGO_URI)
 const blogRoutes = require('./routes/blog');
 const categoryRoutes = require('./routes/category');
 const authRoutes = require('./routes/auth');
+const cronRoutes = require('./routes/cron'); // Import the new cron route
 
 // --- Use Routes ---
 app.use('/api/blogs', blogRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/auth', authRoutes); // Ensure this route is correctly defined and handled
+app.use('/api/cron', cronRoutes); // Use the new cron route
 
 // --- Root Route for API Status Check ---
 app.get('/', (req, res) => res.send('Blog API is running...'));
