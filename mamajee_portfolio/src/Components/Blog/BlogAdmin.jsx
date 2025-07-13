@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
     loginAdmin,
     fetchBlogs,
@@ -103,7 +103,7 @@ const BlogAdmin = () => {
 
     const checkLoginStatus = () => {
         const token = localStorage.getItem('token');
-        if (token === 'fake-token-for-client') { // Check for the specific hardcoded token
+        if (token) { // Check for the presence of any token
             setIsLoggedIn(true);
             loadAdminData();
         }
