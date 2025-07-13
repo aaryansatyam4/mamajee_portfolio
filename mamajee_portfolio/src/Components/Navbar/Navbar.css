@@ -12,7 +12,7 @@
   --mainColor: #224464;
   --mainColorLight: #2F5782;
   --secondaryColor: #4d8ac2;
-  --textColor: #ffffff;
+  --textColor: #4d8ac2;
   --navHeight: 80px;
 }
 
@@ -37,6 +37,10 @@ header {
 /* Adjust the body to account for the fixed navbar */
 body {
   padding-top: var(--navHeight);
+}
+
+body.no-scroll {
+  overflow: hidden; /* Prevent scrolling when menu is open */
 }
 
 /* Logo text */
@@ -128,13 +132,15 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: var(--mainColor);
     transition: transform 0.3s ease;
     transform: translateY(-100%);
+    z-index: 9999; 
   }
 
+  /* This is the key change: Apply the background and other styles when the responsive class is active */
   header .responsive_nav {
     transform: translateY(0);
+    background-color: var(--mainColor); /* This will ensure the dark background appears */
   }
 
   nav .nav-close-btn {

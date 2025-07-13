@@ -10,10 +10,13 @@ function Navbar() {
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+    document.body.classList.toggle("no-scroll"); // Add/remove class to body
+    console.log("Body class list:", document.body.classList); // Log body class list
   };
 
   const closeNavbar = () => {
     navRef.current.classList.remove("responsive_nav");
+    document.body.classList.remove("no-scroll"); // Remove class from body
   };
 
   const handleNavLinkClick = (e, hash) => {

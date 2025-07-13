@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for your backend API
-const API_BASE_URL = 'http://localhost:5001/api';
+const API_BASE_URL = 'https://mamajee-portfolio.onrender.com/api';
 
 // Function to get the authentication token (for admin actions)
 const getToken = () => localStorage.getItem('token');
